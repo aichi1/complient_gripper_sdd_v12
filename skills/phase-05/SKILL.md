@@ -90,7 +90,7 @@ outputs/phase-05/
 - [ ] `zenn-draft.md` が全必須セクションを埋め、公開可能な品質（誤字・事実誤認なし）
 - [ ] `demo_video/script.md` の台本が時間配分・ナレーション・必要素材まで具体化されている
 - [ ] `oss/README.md` が OSS 公開慣習に従っている（badge, quick start, contribution）
-- [ ] `oss/LICENSE-decision.md` で MIT/Apache 2.0 等のライセンスが選定済み、選定根拠が明記
+- [ ] `oss/LICENSE-decision.md` に **MIT ライセンス採用**（プロジェクト確定事項）の根拠と、`LICENSE` ファイル本体が揃っている
 - [ ] `outreach/target-list.md` に 10 社以上のアプローチ対象がある
 - [ ] `outreach/message-templates.md` に LinkedIn/メール 2 種類以上の雛形がある
 - [ ] `outreach/tracking.csv` に少なくとも 3 社のアプローチ実績が記録されている（実施後）
@@ -119,10 +119,10 @@ outputs/phase-05/
 3. `assets-checklist.md` で必要素材を一覧化
 
 ### Step 4: OSS 公開準備
-1. `oss/LICENSE-decision.md` — MIT / Apache 2.0 を比較、選定
+1. `oss/LICENSE-decision.md` — **MIT ライセンス採用**（プロジェクト確定事項）の根拠を明記。リポジトリルートに `LICENSE` ファイル本体（MIT 定型文 + 著作権表示）を置く
 2. `oss/README.md` を書く（OSS 用に新規）— Phase 2 の README を流用しつつ外部向けに再構成
 3. `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md` を作成
-4. `publish-checklist.md` — 公開前に実施すべき項目（秘密情報スキャン、Git 履歴レビュー、ライセンスヘッダ）
+4. `publish-checklist.md` — 公開前に実施すべき項目（秘密情報スキャン、Git 履歴レビュー、ライセンスヘッダ、`LICENSE` ファイル存在確認）
 
 **→ `sdd-security-reviewer` に OSS 公開物の機密チェックを依頼（.env、顧客データ、個人情報）**
 **→ `sdd-software-architect` に OSS README の技術説明の整合性レビューを依頼**

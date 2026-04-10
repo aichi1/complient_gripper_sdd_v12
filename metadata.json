@@ -70,5 +70,13 @@
       "CAD 入力から STL 出力まで Web UI 経由で一気通貫に動くこと",
       "有償トライアルに進む意思を示す企業 2 社以上を獲得すること"
     ]
+  },
+  "confirmed_assumptions": {
+    "confirmed_at": "2026-04-10",
+    "primary_os": "Linux / macOS (Windows via WSL2)",
+    "printer": "FDM / TPU (SLA / MJF outsourced as backup)",
+    "gripper_body": "SMC MHZ2 series compatible parallel 2-jaw",
+    "oss_license": "MIT",
+    "ci_policy": "Not required during MVP; consider in Phase 5+"
   }
 }

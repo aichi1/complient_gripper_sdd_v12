@@ -59,13 +59,13 @@
 5. **MVP 完成後の製品化フェーズを追加**：`/re-init-task` を実行し、Iteration 2 として拡張（例：実接触解析、ユーザー認証、課金、フル 3D 最適化など）
 6. **完了時**：`/finalize` で `~/.sdd-knowledge/` に知見を蓄積、`/retrospective` で振り返り
 
-## Assumptions Pending Confirmation
-以下は `project_init.md` から推定した前提。Phase 1 着手前にユーザー確認推奨：
-- 主要開発 OS は Linux / macOS（Windows は WSL 前提）
-- 3Dプリンタは FDM/TPU 方式（SLA/MJF は外注バックアップ）
-- 対象グリッパーボディは SMC MHZ2 系列相当の平行 2 爪
-- OSS 公開時のライセンスは MIT または Apache 2.0（Phase 5 で確定）
-- CI は MVP 段階では必須としない（Phase 5 以降で導入検討）
+## Confirmed Assumptions
+以下は `project_init.md` から推定しユーザー確認済みの前提（2026-04-10 確定）：
+- **主要開発 OS**：Linux / macOS（Windows は WSL 前提）
+- **3Dプリンタ**：FDM/TPU 方式（SLA/MJF は外注バックアップ）
+- **対象グリッパーボディ**：SMC MHZ2 系列相当の平行 2 爪
+- **OSS ライセンス**：**MIT**（Phase 5 の OSS 公開時に採用）
+- **CI**：MVP 段階では必須としない（Phase 5 以降で導入検討）
 
 ## Next Session Starter
 ```
