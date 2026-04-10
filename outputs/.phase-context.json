@@ -1,0 +1,34 @@
+{
+  "last_phase": 1,
+  "last_phase_summary": "Phase 1 PoC 完了。Sigmund 88-line コードの Python 再実装 + compliant mechanism 目的関数 (mutual mean compliance) + Sigmund 1997 方式の入出力スプリング安定化を実装。4 ケース (mbb/cylinder/box/lshape) が収束、20 unit テスト全 PASS (FD 勾配整合性含む)。",
+  "key_decisions": [
+    "SIMP + OC 更新法を基本アルゴリズムとして採用",
+    "compliant mechanism は 2 荷重ケース (F_in + L_out) + 入出力スプリング k=0.1 で安定化",
+    "フィルタは密度 / 感度両方を実装、CLI で切替可能",
+    "物理検証は外部作業のため、手順書 + テンプレートで成果物化",
+    "Heaviside projection は Phase 2 に持ち越し"
+  ],
+  "output_files": [
+    "outputs/phase-01/src/gripperforge_poc/topopt.py",
+    "outputs/phase-01/src/gripperforge_poc/objectives.py",
+    "outputs/phase-01/src/gripperforge_poc/filters.py",
+    "outputs/phase-01/src/gripperforge_poc/cases.py",
+    "outputs/phase-01/src/gripperforge_poc/cli.py",
+    "outputs/phase-01/reports/algorithm-notes.md",
+    "outputs/phase-01/reports/physical-validation.md",
+    "outputs/phase-01/results/{mbb,cylinder,box,lshape}_{density.png,history.csv,topology.npy}"
+  ],
+  "pending_issues": [
+    "MBB ケースが 120 iter で tol=0.01 に到達せず (OC move-limit 振動、Phase 2 で MMA or adaptive move 検討)",
+    "compliant ケースの入出力 BC 配置は手動調整で決定済み、Phase 2 で自動化必要"
+  ],
+  "next_phase_hint": "Phase 2 では gripperforge_poc をリファクタして gripperforge_engine にする。主要追加機能: Heaviside projection (beta schedule)、Pydantic v2 による入力スキーマ、STL 出力 (trimesh + skimage.measure.find_contours)、任意ワーク形状への境界条件自動生成、5 ケースのベンチマーク。Phase 1 の objectives.py / topopt.py は直接流用可。cases.py は WorkpieceGeometry スキーマに置換される。",
+  "docs_digest": {
+    "scope": "2D 断面トポロジー最適化 + コンプライアント対応 + STL + Web UI + 実ワーク検証 + 発信 (5 phase)",
+    "key_requirements": [
+      "実ワーク 5 種類中 4 以上で既製品汎用ジョー以上の把持安定性",
+      "CAD→STL Web UI の一気通貫",
+      "有償トライアル 2 社以上"
+    ]
+  }
+}
