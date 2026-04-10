@@ -1,0 +1,15 @@
+{
+  "category": "small_implementation",
+  "project": "GripperForge",
+  "required_files": [
+    "requirements.md",
+    "plan.md",
+    "team.md",
+    "tech-stack.md",
+    "io-spec.md",
+    "constraints.md"
+  ],
+  "optional_files": [],
+  "generated_by": "/init-task",
+  "schema_version": "1.0"
+}
