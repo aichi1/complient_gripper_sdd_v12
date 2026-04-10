@@ -5,3 +5,10 @@ Thumbs.db
 # Windows security zone metadata (from downloads)
 *:Zone.Identifier
 *Zone.Identifier
+
+# Python build artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
